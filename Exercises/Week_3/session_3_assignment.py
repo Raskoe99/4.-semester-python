@@ -8,10 +8,10 @@ directors = ["Benny", "Hans", "Tine", "Mille", "Torben", "Troels", "Søren"]
 managers = ["Tine", "Trunte", "Rane"]
 employees = ["Niels", "Anna", "Tine", "Ole", "Trunte", "Bent", "Rane", "Allan", "Stine", "Claus", "James", "Lars"]
 
-'''who in the board of directors is not an employee?
-who in the board of directors is also an employee?
-how many of the management is also member of the board?
-All members of the managent also an employee
+'''Who in the board of directors is not an employee?
+Who in the board of directors is also an employee?
+How many of the management is also member of the board?
+All members of the management also an employee?
 All members of the management also in the board?
 Who is an employee, member of the management, and a member of the board?
 Who of the employee is neither a memeber or the board or management?'''
@@ -26,9 +26,6 @@ print("Part of management and the board: ", setManagers.intersection(setDirector
 print("Part of management and an employee: ", setManagers.intersection(setEmployees))
 print("Part of management, the board and an employee: ", setManagers.intersection(setDirectors.intersection(setEmployees)))
 print("Employee, neither part of management nor the board: ", setEmployees.difference(setDirectors.difference(setManagers)))
-
-
-
 
 print()
 

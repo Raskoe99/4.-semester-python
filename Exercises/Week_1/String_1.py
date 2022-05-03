@@ -24,9 +24,9 @@ from operator import indexOf
 
 
 def donuts(count):
-    if count >= 10 :
+    if count >= 10:
         return 'Number of donuts: many'
-    else :
+    else:
         return 'Number of donuts: ' + str(count)
 
 
@@ -36,9 +36,9 @@ def donuts(count):
 # so 'spring' yields 'spng'. However, if the string length
 # is less than 2, return instead the empty string.
 def both_ends(s):
-    if len(s) < 2 :
+    if len(s) < 2:
         return '' 
-    else :
+    else:
         begin = s[0:2]
         end = s[len(s)-2:len(s)]
         return begin + end
